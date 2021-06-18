@@ -9,6 +9,8 @@ def equalize(filename):
     img = plt.imread(filename).astype(float)
     filt = 'sp3_filters' # There are 4 orientations for this filter
     pyr = pt.pyramids.SteerablePyramidSpace(img, height=4, order=3)
+    #for non-greyscle images, do img[:,:, channels]
+
 
 
     '''
